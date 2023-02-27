@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Name:Mansi shardul
+Location:Nashik
+-->
+<html>
+    <head>
+        <title>Employee Navigation Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid" style="background-image:url('bg1.png');height: 1000px;background-repeat: no-repeat;background-size: cover;">
+
+            <div class="container" style="border:2px solid black ;background-color: white;height:auto;width:800px;border-top:25px solid lavender;margin-top: 15px;"> 
+                <h2 style="text-align: center;margin-top: 7px;margin-bottom: 32px">Employee Form</h2>
+                <form id="form1" method="GET">
+                    <div class="form-group">
+                        <label>ID</label>
+                        <input type="number" class="form-control" id="id" placeholder="Enter Employee ID" onchange='getitem()' ></div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name of Employee"  ></div>
+                    <div class="form-group">
+                        <label >Email address</label>
+                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label >Basic Salary</label>
+                        <input type="number" class="form-control" id="sal" placeholder="Enter Salary in Rupees">
+                    </div>
+                    <div class="form-group">
+                        <label >Daily Allowance</label>
+                        <input type="number" class="form-control" id="DA" placeholder="Enter DA">
+                    </div>
+                    <div class="form-group">
+                        <label >Deduction</label>
+                        <input type="number" class="form-control" id="det" placeholder="Enter Deduction">
+                    </div>
+
+
+                </form>
+                <div class="container btn btn-group" role="group" aria-label="..." style="margin-left: 200px;">
+                    <button type="button" class="btn btn-lg btn-primary" id="new" onclick="newemp()">New</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="save" onclick="save()">Save</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="edit" onclick="edit()">Edit</button>
+                    <button type="button" class="btn btn-lg  btn-primary" id="change" onclick="change()">Update</button>
+                    <button type="button" class="btn btn-lg  btn-primary" id="reset" onclick="reset()">Reset</button> </div>
+                <br>
+                <div class="container btn btn-group" role="group" aria-label="..." style="margin-left: 225px;" > 
+                    <button type="button" class="btn btn-lg btn-primary" id="first" onclick="getFirst()">First</button>
+                    <button type="button" class="btn btn-lg  btn-primary" id="prev" onclick="getPrev()">Previous</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="next" onclick="getNext()">Next</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="last" onclick="getLast()">Last</button>    
+                </div>    
+
+            </div>
+        </div>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>
